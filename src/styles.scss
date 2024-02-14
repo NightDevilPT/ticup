@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+	width: 100%;
+	height: 100vh;
+	transition: .3s all ease-in-out;
+}
+
+html[data-theme="dark"] {
+	--primary-bg: #020617;
+	--secondary-bg: #0f172a;
+	--primary-fg: #e2e8f0;
+	--secondary-fg: #64748b;
+	--highlight: #06b6d4;
+	--divider: #1e293b;
+}
+
+html[data-theme="light"] {
+	--primary-bg: #e2e8f0;
+	--secondary-bg: #cbd5e1;
+	--primary-fg: #0f172a;
+	--secondary-fg: #334155;
+	--highlight: #06b6d4;
+	--divider: #475569;
+}
